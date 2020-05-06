@@ -1,4 +1,4 @@
-from helper_eqs import Particle, eulers, draw, initial_values
+from helper_f import Particle, eulers, draw, initial_values
 import pygame
 
 def main():
@@ -10,10 +10,9 @@ def main():
 
 	#add some charged particles with which to create the field line graph
 	particle1 = Particle(8, 400, 400)
-	particle2 = Particle(8, 600, 600)
-	particle3 = Particle(-8, 400, 600)
-	particle4 = Particle(8, 600, 400)
-	particles = [particle1, particle2]
+	particle2 = Particle(4, 600, 600)
+	particle3 = Particle(-10, 400, 600)
+	particles = [particle1, particle2, particle3]
 
 	#calculate the coordinates which will be drawn to the screen using euler's method
 	coordinates = eulers(particles)
