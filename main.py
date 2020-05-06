@@ -8,7 +8,8 @@ def main():
 	screen = pygame.display.set_mode((1000, 1000))
 	clock = pygame.time.Clock()
 
-	#add some charged particles with which to create the field line graph
+	#add some charged particles with which to create the field line graph. To add new particles just create a new Particle object.
+	#format => Particle(charge, x_coordinate, y_coordinate)
 	p1 = Particle(-12, 400, 400)
 	p2 = Particle(8, 600, 600)
 	p3 = Particle(-8, 400, 600)
