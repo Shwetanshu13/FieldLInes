@@ -1,4 +1,4 @@
-from helper_eqs import Particle, eulers, draw, initial_values
+from helper import Particle, eulers, draw, initial_values
 import pygame
 
 def main():
